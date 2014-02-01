@@ -1,6 +1,6 @@
 'use strict'
 
-game = new Phaser.Game(1200, 768, Phaser.AUTO, '', {
+game = new Phaser.Game(800, 768, Phaser.AUTO, '', {
   create: create
 })
 

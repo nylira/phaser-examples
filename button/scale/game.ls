@@ -8,7 +8,7 @@ game = new Phaser.Game(
 )
 
 function preload()
-  game.load.spritesheet \button \../../../phaser/examples/assets/button_sprite_sheet.png 193 71
+  game.load.spritesheet \button \../../../phaser/examples/assets/buttons/button_sprite_sheet.png 193 71
   game.load.image \sky0 \../../../phaser/examples/assets/skies/space2.png
   game.load.image \sky1 \../../../phaser/examples/assets/skies/cavern1.png
   game.load.image \sky2 \../../../phaser/examples/assets/skies/chrome.png
@@ -59,9 +59,9 @@ function create()
   btn6.scale.set-to 2 2
 
   # works regardless of world angle, parent angle or camera position
-  game.world.set-bounds 0 0 2000 2000
-  game.world.angle = 3
-  game.camera.x = 40
+  #game.world.set-bounds 0 0 2000 2000
+  #game.world.angle = 3
+  #game.camera.x = 40
 
 change-sky = (button)->
   background.load-texture button.name

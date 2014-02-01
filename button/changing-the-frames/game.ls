@@ -7,8 +7,8 @@ game = new Phaser.Game(
 )
 
 function preload()
-  game.load.spritesheet \button \../../../phaser/examples/assets/number-buttons-90x90.png 90 90
-  game.load.image \background \../../../phaser/examples/assets/starfield.jpg
+  game.load.spritesheet \button \../../../phaser/examples/assets/buttons/number-buttons-90x90.png 90 90
+  game.load.image \background \../../../phaser/examples/assets/misc/starfield.jpg
 
 var button
 

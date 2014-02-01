@@ -8,7 +8,7 @@
     render: render
   });
   function preload(){
-    game.load.spritesheet('button', '../../../phaser/examples/assets/button_sprite_sheet.png', 193, 71);
+    game.load.spritesheet('button', '../../../phaser/examples/assets/buttons/button_sprite_sheet.png', 193, 71);
     game.load.image('sky0', '../../../phaser/examples/assets/skies/space2.png');
     game.load.image('sky1', '../../../phaser/examples/assets/skies/cavern1.png');
     game.load.image('sky2', '../../../phaser/examples/assets/skies/chrome.png');
@@ -40,10 +40,7 @@
     btn6 = game.add.button(570, 200, 'button', changeSky, this, 2, 1, 0);
     btn6.name = 'sky6';
     btn6.angle = 32;
-    btn6.scale.setTo(2, 2);
-    game.world.setBounds(0, 0, 2000, 2000);
-    game.world.angle = 3;
-    return game.camera.x = 40;
+    return btn6.scale.setTo(2, 2);
   }
   changeSky = function(button){
     return background.loadTexture(button.name);
