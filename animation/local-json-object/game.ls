@@ -7,7 +7,7 @@ game = new Phaser.Game(1200, 768, Phaser.AUTO, '', {
 
 
 function preload()
-  game.load.atlas('bot', '../../../phaser/examples/assets/running_bot.png', null, bot-data)
+  game.load.atlas('bot', '../../../phaser/examples/assets/sprites/running_bot.png', null, bot-data)
 
 var bot
 
