@@ -7,7 +7,7 @@
     create: create
   });
   function preload(){
-    return game.load.image('sky', '../../../phaser/examples/assets/sky.png');
+    return game.load.image('sky', '../../../phaser/examples/assets/misc/starfield.png');
   }
   function create(){
     var image;

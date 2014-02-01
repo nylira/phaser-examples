@@ -2,12 +2,12 @@
 (function(){
   'use strict';
   var game;
-  game = new Phaser.Game(1200, 768, Phaser.AUTO, '', {
+  game = new Phaser.Game(800, 768, Phaser.AUTO, '', {
     preload: preload,
     create: create
   });
   function preload(){
-    return game.load.image('sky', '../../../phaser/examples/assets/sky.png');
+    return game.load.image('sky', '../../../phaser/examples/assets/misc/starfield.png');
   }
   function create(){
     return game.add.sprite(0, 0, 'sky');

@@ -12,7 +12,7 @@ function preload()
   # width of frame     = 37
   # height of frame    = 45
   # number of frames   = 18
-  game.load.spritesheet \mummy \../../../phaser/examples/assets/metalslug_mummy37x45.png 37 45 18
+  game.load.spritesheet \mummy \../../../phaser/examples/assets/sprites/metalslug_mummy37x45.png 37 45 18
 
 function create()
   mummy = game.add.sprite 300 200 \mummy

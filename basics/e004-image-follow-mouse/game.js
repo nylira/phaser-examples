@@ -9,8 +9,8 @@
     render: render
   });
   function preload(){
-    game.load.image('bird', '../../../phaser/examples/assets/bird.png');
-    return game.load.image('sky', '../../../phaser/examples/assets/sky.png');
+    game.load.image('bird', '../../../phaser/examples/assets/sprites/ufo.png');
+    return game.load.image('sky', '../../../phaser/examples/assets/misc/starfield.png');
   }
   function create(){
     game.add.sprite(0, 0, 'sky');

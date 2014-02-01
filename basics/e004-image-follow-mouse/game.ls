@@ -8,8 +8,8 @@ game = new Phaser.Game(1200, 768, Phaser.AUTO, '', {
 })
 
 function preload()
-  game.load.image('bird', '../../../phaser/examples/assets/bird.png')
-  game.load.image('sky', '../../../phaser/examples/assets/sky.png')
+  game.load.image('bird', '../../../phaser/examples/assets/sprites/ufo.png')
+  game.load.image('sky', '../../../phaser/examples/assets/misc/starfield.png')
 
 var image
 
