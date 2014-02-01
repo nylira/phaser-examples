@@ -8,10 +8,9 @@
     update: update
   });
   function preload(){
-    game.load.image('background', '../../../phaser/examples/assets/starfield.jpg');
-    game.load.image('ufo', '../../../phaser/examples/assets/space-baddie.png');
-    game.load.image('star', '../../../phaser/examples/assets/star.png');
-    game.load.image('player', '../../../phaser/examples/assets/phaser-dude.png');
+    game.load.image('background', '../../../phaser/examples/assets/misc/starfield.jpg');
+    game.load.image('star', '../../../phaser/examples/assets/sprites/ufo.png');
+    game.load.image('player', '../../../phaser/examples/assets/sprites/phaser-dude.png');
     return game.load.image('ground', '../../../phaser/examples/assets/steel-32.png');
   }
   score = 0;
@@ -43,7 +42,9 @@
       game.physics.overlap(player, enemies, killEnemies, null, this);
       player.body.velocity.setTo(0, 0);
       if (cursors.up.isDown) {
-        player.body.velocity.y = -400;
+        player.body.velocity.y = -300;
+      } else if (cursors.down.isDown) {
+        player.body.velocity.y = 300;
       }
       scoreText.content = "Avoided: " + score;
       enemies.forEach(function(enemy){
@@ -83,7 +84,6 @@
   };
   generatePlayer = function(){
     player = game.add.sprite(150, game.world.centerY, 'player');
-    player.body.gravity.y = 300;
     return player.body.collideWorldBounds = true;
   };
   generateEnemies = function(){
@@ -95,7 +95,6 @@
       y = game.world.randomY;
       scale = rndRange(1, 3);
       enemy = game.add.sprite(x, y, 'star');
-      enemy.scale.setTo(scale, scale);
       enemy.body.velocity.x = worldVelocity;
       enemy.anchor.setTo(0.5, 0.5);
       results$.push(enemies.add(enemy));

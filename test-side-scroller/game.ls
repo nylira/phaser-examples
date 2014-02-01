@@ -7,10 +7,9 @@ game = new Phaser.Game(1200, 480, Phaser.AUTO, '',
 )
 
 function preload
-  game.load.image \background \../../../phaser/examples/assets/starfield.jpg
-  game.load.image \ufo \../../../phaser/examples/assets/space-baddie.png
-  game.load.image \star \../../../phaser/examples/assets/star.png
-  game.load.image \player \../../../phaser/examples/assets/phaser-dude.png
+  game.load.image \background \../../../phaser/examples/assets/misc/starfield.jpg
+  game.load.image \star \../../../phaser/examples/assets/sprites/ufo.png
+  game.load.image \player \../../../phaser/examples/assets/sprites/phaser-dude.png
   game.load.image \ground \../../../phaser/examples/assets/steel-32.png
 
 var player
@@ -58,7 +57,9 @@ function update
     player.body.velocity.set-to 0 0
 
     if cursors.up.is-down
-      player.body.velocity.y = -400
+      player.body.velocity.y = -300
+    else if cursors.down.is-down
+      player.body.velocity.y = 300
 
     score-text.content = "Avoided: #score"
 
@@ -97,7 +98,6 @@ generate-backgrounds = ->
 
 generate-player = ->
   player := game.add.sprite 150, game.world.center-y, \player
-  player.body.gravity.y = 300
   player.body.collide-world-bounds = true
 
 generate-enemies = ->
@@ -108,7 +108,7 @@ generate-enemies = ->
     scale = rnd-range(1, 3)
 
     enemy = game.add.sprite x, y, \star
-    enemy.scale.set-to scale, scale
+    #enemy.scale.set-to scale, scale
     enemy.body.velocity.x = world-velocity
     enemy.anchor.set-to 0.5 0.5
     enemies.add enemy
