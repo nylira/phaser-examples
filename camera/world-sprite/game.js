@@ -9,8 +9,8 @@
     render: render
   });
   function preload(){
-    game.load.image('backdrop', 'assets/remember-me.jpg');
-    return game.load.image('card', 'assets/mana_card.png');
+    game.load.image('backdrop', '../../../phaser/examples/assets/remember-me.jpg');
+    return game.load.image('card', '../../../phaser/examples/assets/mana_card.png');
   }
   Keys = Phaser.Keyboard;
   function create(){

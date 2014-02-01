@@ -4,7 +4,7 @@
   var map, sprite, gamePreload, gameCreate, gameUpdate, game;
   map = require('prelude-ls').map;
   gamePreload = function(){
-    return game.load.image('image-ball', 'assets/sprites/shinyball.png');
+    return game.load.image('image-ball', '../../../phaser/examples/assets/sprites/shinyball.png');
   };
   gameCreate = function(){
     return sprite = game.add.sprite(game.world.centerX, game.world.centerY, 'image-ball');

@@ -9,7 +9,7 @@
     render: render
   });
   function preload(){
-    return game.load.image('alien', 'assets/ra_dont_crack_under_pressure.png');
+    return game.load.image('alien', '../../../phaser/examples/assets/ra_dont_crack_under_pressure.png');
   }
   function create(){
     game.stage.backgroundColor = 'hsl(210,50%,25%)';

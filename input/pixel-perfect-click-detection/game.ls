@@ -3,7 +3,7 @@
 var b
 
 g-preload = !->
-  g.load.image \img-bunny \assets/sprites/bunny.png
+  g.load.image \img-bunny \../../../phaser/examples/assets/sprites/bunny.png
 
 g-create = !->
   b := g.add.sprite g.world.center-x, g.world.center-y, \img-bunny

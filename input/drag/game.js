@@ -4,8 +4,8 @@
   var map, gamePreload, gameCreate, game;
   map = require('prelude-ls').map;
   gamePreload = function(){
-    game.load.image('image-grid', 'assets/tests/debug-grid-1920x1920.png');
-    return game.load.image('image-atari1', 'assets/sprites/atari800xl.png');
+    game.load.image('image-grid', '../../../phaser/examples/assets/tests/debug-grid-1920x1920.png');
+    return game.load.image('image-atari1', '../../../phaser/examples/assets/sprites/atari800xl.png');
   };
   gameCreate = function(){
     var atari1;

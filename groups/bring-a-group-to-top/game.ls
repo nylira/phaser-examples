@@ -8,12 +8,12 @@ game = new Phaser.Game(800, 600, Phaser.CANVAS, '',
 )
 
 function preload
-  game.load.image \beast \assets/pics/shadow_of_the_beast2_karamoon.png
-  game.load.image \snot \assets/pics/nslide_snot.png
-  game.load.image \atari1 \assets/sprites/atari130xe.png
-  game.load.image \sonic \assets/sprites/sonic_havok_sanity.png
-  game.load.image \coke \assets/sprites/cokecan.png
-  game.load.image \disk \assets/sprites/oz_pov_melting_disk.png
+  game.load.image \beast \../../../phaser/examples/assets/pics/shadow_of_the_beast2_karamoon.png
+  game.load.image \snot \../../../phaser/examples/assets/pics/nslide_snot.png
+  game.load.image \atari1 \../../../phaser/examples/assets/sprites/atari130xe.png
+  game.load.image \sonic \../../../phaser/examples/assets/sprites/sonic_havok_sanity.png
+  game.load.image \coke \../../../phaser/examples/assets/sprites/cokecan.png
+  game.load.image \disk \../../../phaser/examples/assets/sprites/oz_pov_melting_disk.png
 
 var group1, group2, coke, disk
 

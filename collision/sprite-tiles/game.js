@@ -9,8 +9,8 @@
     render: render
   });
   function preload(){
-    game.load.spritesheet('tiles', 'assets/tiles/platformer_tiles.png', 16, 16);
-    return game.load.image('carrot', 'assets/sprites/carrot.png');
+    game.load.spritesheet('tiles', '../../../phaser/examples/assets/tiles/platformer_tiles.png', 16, 16);
+    return game.load.image('carrot', '../../../phaser/examples/assets/sprites/carrot.png');
   }
   function create(){
     var i$, i, tile;

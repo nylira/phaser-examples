@@ -3,7 +3,7 @@
 var sprite
 
 g-preload = !->
-  g.load.image \img-sprite \assets/sprites/darkwing_crazy.png
+  g.load.image \img-sprite \../../../phaser/examples/assets/sprites/darkwing_crazy.png
 
 g-create = !->
   g.stage.background-color = 'hsl(0,0%,33%)'

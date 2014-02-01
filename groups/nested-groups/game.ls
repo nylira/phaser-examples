@@ -3,8 +3,8 @@
 var balls-group, ships-group
 
 preload = ->
-  g.load.image \ball \assets/sprites/pangball.png
-  g.load.image \arrow \assets/sprites/asteroids_ship.png
+  g.load.image \ball \../../../phaser/examples/assets/sprites/pangball.png
+  g.load.image \arrow \../../../phaser/examples/assets/sprites/asteroids_ship.png
 
 create = ->
   balls-group := g.add.group!

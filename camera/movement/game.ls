@@ -12,7 +12,7 @@ var cursors
 var shrooms
 
 function preload
-  game.load.image \mushroom \assets/mushroom2.png
+  game.load.image \mushroom \../../../phaser/examples/assets/mushroom2.png
 
 function create
   game.stage.background-color = '#2d2d2d'

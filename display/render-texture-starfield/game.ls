@@ -7,7 +7,7 @@ game = new Phaser.Game(800, 600, Phaser.AUTO, '',
 )
 
 function preload
-  game.load.image \star \assets/sprites/bullet.png
+  game.load.image \star \../../../phaser/examples/assets/sprites/bullet.png
 
 var star, texture1, texture2, texture3
 stars = []

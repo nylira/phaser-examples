@@ -7,7 +7,7 @@
     create: create
   });
   function preload(){
-    return game.load.atlas('bot', 'assets/running_bot.png', null, botData);
+    return game.load.atlas('bot', '../../../phaser/examples/assets/running_bot.png', null, botData);
   }
   function create(){
     bot = game.add.sprite(game.world.centerX, 300, 'bot');

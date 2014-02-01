@@ -2,8 +2,8 @@
 {map, each} = require \prelude-ls
 
 preload = ->
-  g.load.spritesheet \item \assets/buttons/number-buttons-90x90.png 90 90
-  g.load.image \revive-button \assets/buttons/revive-button.png
+  g.load.spritesheet \item \../../../phaser/examples/assets/buttons/number-buttons-90x90.png 90 90
+  g.load.image \revive-button \../../../phaser/examples/assets/buttons/revive-button.png
 
 create = ->
   map create-items, [0 til 3]

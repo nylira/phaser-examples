@@ -8,8 +8,8 @@ game = new Phaser.Game(800, 600, Phaser.CANVAS, '',
 )
 
 function preload
-  game.load.image \atari \assets/sprites/atari130xe.png
-  game.load.image \mushroom \assets/sprites/mushroom2.png
+  game.load.image \atari \../../../phaser/examples/assets/sprites/atari130xe.png
+  game.load.image \mushroom \../../../phaser/examples/assets/sprites/mushroom2.png
 
 var sprite1, sprite2
 

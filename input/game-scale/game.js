@@ -9,7 +9,7 @@
     game.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL;
     game.stage.scale.setShowAll();
     game.stage.scale.refresh();
-    return game.load.image('image-melon', 'assets/sprites/melon.png');
+    return game.load.image('image-melon', '../../../phaser/examples/assets/sprites/melon.png');
   };
   gameCreate = function(){
     var i$, i;

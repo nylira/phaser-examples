@@ -3,7 +3,7 @@
   'use strict';
   var sprite, gPreload, gCreate, gRender, g;
   gPreload = function(){
-    g.load.image('img-sprite', 'assets/sprites/darkwing_crazy.png');
+    g.load.image('img-sprite', '../../../phaser/examples/assets/sprites/darkwing_crazy.png');
   };
   gCreate = function(){
     g.stage.backgroundColor = 'hsl(0,0%,33%)';

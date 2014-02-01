@@ -10,8 +10,8 @@ game = new Phaser.Game(1200, 768, Phaser.AUTO, '', {
 var bot
 
 function preload()
-  game.load.atlas-JSON-hash('bot', 'assets/running_bot.png', 'assets/running_bot.json')
-  game.load.spritesheet('mummy', 'assets/metalslug_mummy37x45.png', 37, 45, 18)
+  game.load.atlas-JSON-hash('bot', '../../../phaser/examples/assets/running_bot.png', '../../../phaser/examples/assets/running_bot.json')
+  game.load.spritesheet('mummy', '../../../phaser/examples/assets/metalslug_mummy37x45.png', 37, 45, 18)
   
 function create()
   bot := game.add.sprite(200, 200, 'bot')

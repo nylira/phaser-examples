@@ -3,8 +3,8 @@
   'use strict';
   var chick, car, mech, robot, cop, gPreload, gCreate, addSprite, g;
   gPreload = function(){
-    g.load.image('img-bunny', 'assets/sprites/bunny.png');
-    g.load.atlas('atlas', 'assets/pics/texturepacker_test.png', 'assets/pics/texturepacker_test.json');
+    g.load.image('img-bunny', '../../../phaser/examples/assets/sprites/bunny.png');
+    g.load.atlas('atlas', '../../../phaser/examples/assets/pics/texturepacker_test.png', '../../../phaser/examples/assets/pics/texturepacker_test.json');
   };
   gCreate = function(){
     g.stage.backgroundColor = '#404040';

@@ -9,8 +9,8 @@
     render: render
   });
   function preload(){
-    game.load.image('phaser', 'assets/sprites/phaser-dude.png');
-    return game.load.spritesheet('veggies', 'assets/sprites/fruitnveg32wh37.png', 32, 32);
+    game.load.image('phaser', '../../../phaser/examples/assets/sprites/phaser-dude.png');
+    return game.load.spritesheet('veggies', '../../../phaser/examples/assets/sprites/fruitnveg32wh37.png', 32, 32);
   }
   function create(){
     var i$, i, vegetable, chili, results$ = [];

@@ -2,7 +2,7 @@
 {map} = require \prelude-ls
 
 game-preload = ->
-  game.load.spritesheet \image-item \assets/buttons/number-buttons-90x90.png 90 90
+  game.load.spritesheet \image-item \../../../phaser/examples/assets/buttons/number-buttons-90x90.png 90 90
 
 game-create = ->
   map add-item, [0 til 6]

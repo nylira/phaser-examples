@@ -8,7 +8,7 @@
     update: update
   });
   function preload(){
-    return game.load.image('star', 'assets/sprites/bullet.png');
+    return game.load.image('star', '../../../phaser/examples/assets/sprites/bullet.png');
   }
   stars = [];
   stageTtl = 200;

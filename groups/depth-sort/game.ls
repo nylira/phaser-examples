@@ -6,10 +6,10 @@ old-y = 0
 
 preload = ->
   g.load.tilemap(
-    \desert, \assets/tilemaps/maps/desert.json, null, Phaser.Tilemap.TILED_JSON)
-  g.load.image \tiles \assets/tilemaps/tiles/tmw_desert_spacing.png
-  g.load.image \phaser \assets/sprites/phaser-dude.png
-  g.load.spritesheet \trees \assets/maps/walls_1x2.png 32 64
+    \desert, \../../../phaser/examples/assets/tilemaps/maps/desert.json, null, Phaser.Tilemap.TILED_JSON)
+  g.load.image \tiles \../../../phaser/examples/assets/tilemaps/tiles/tmw_desert_spacing.png
+  g.load.image \phaser \../../../phaser/examples/assets/sprites/phaser-dude.png
+  g.load.spritesheet \trees \../../../phaser/examples/assets/maps/walls_1x2.png 32 64
 
 create = ->
   desert-map = g.add.tilemap \desert

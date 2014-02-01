@@ -4,8 +4,8 @@
   var map, enemies, preload, create, killBaddie, killIt, createBaddie, g;
   map = require('prelude-ls').map;
   preload = function(){
-    g.load.image('baddie', 'assets/sprites/space-baddie.png');
-    return g.load.spritesheet('button', 'assets/buttons/baddie-buttons.png', 224, 70);
+    g.load.image('baddie', '../../../phaser/examples/assets/sprites/space-baddie.png');
+    return g.load.spritesheet('button', '../../../phaser/examples/assets/buttons/baddie-buttons.png', 224, 70);
   };
   create = function(){
     var i$, i, x, y;

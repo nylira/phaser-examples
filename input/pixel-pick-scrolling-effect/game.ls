@@ -4,8 +4,8 @@ var m, s
 cam-speed = 8
 
 g-preload = !->
-  g.load.spritesheet \mummy \assets/sprites/metalslug_mummy37x45.png 37 45 18
-  g.load.image \stars \assets/misc/starfield.png
+  g.load.spritesheet \mummy \../../../phaser/examples/assets/sprites/metalslug_mummy37x45.png 37 45 18
+  g.load.image \stars \../../../phaser/examples/assets/misc/starfield.png
 
 g-create = !->
   g.world.set-bounds 0 0 4000 2000

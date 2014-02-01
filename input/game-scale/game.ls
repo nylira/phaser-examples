@@ -11,7 +11,7 @@ game-preload = ->
   game.stage.scale.set-show-all!
   game.stage.scale.refresh!
 
-  game.load.image \image-melon \assets/sprites/melon.png
+  game.load.image \image-melon \../../../phaser/examples/assets/sprites/melon.png
 
 game-create = ->
   game.world.set-bounds 0 0 2000 2000

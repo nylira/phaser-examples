@@ -3,9 +3,9 @@
   'use strict';
   var gPreload, gCreate, gUpdate, gRender, g;
   gPreload = function(){
-    g.load.image('grid', 'assets/tests/debug-grid-1920x1920.png');
-    g.load.image('atari1', 'assets/sprites/atari130xe.png');
-    g.load.image('atari2', 'assets/sprites/atari800xl.png');
+    g.load.image('grid', '../../../phaser/examples/assets/tests/debug-grid-1920x1920.png');
+    g.load.image('atari1', '../../../phaser/examples/assets/sprites/atari130xe.png');
+    g.load.image('atari2', '../../../phaser/examples/assets/sprites/atari800xl.png');
   };
   gCreate = function(){
     var atari1, atari2;

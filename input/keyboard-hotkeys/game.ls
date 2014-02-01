@@ -3,9 +3,9 @@
 var key-one, key-two, key-three
 
 game-preload = ->
-  game.load.image \image-phaser \assets/sprites/phaser-dude.png
-  game.load.image \image-logo \assets/sprites/phaser_tiny.png
-  game.load.image \image-pineapple \assets/sprites/pineapple.png
+  game.load.image \image-phaser \../../../phaser/examples/assets/sprites/phaser-dude.png
+  game.load.image \image-logo \../../../phaser/examples/assets/sprites/phaser_tiny.png
+  game.load.image \image-pineapple \../../../phaser/examples/assets/sprites/pineapple.png
 
 game-create = ->
   game.stage.background-color = \#736357

@@ -3,7 +3,7 @@
 var sprite, sprite2
 
 g-preload = !->
-  g.load.spritesheet \gameboy \assets/sprites/gameboy_seize_color_40x60.png 40 60
+  g.load.spritesheet \gameboy \../../../phaser/examples/assets/sprites/gameboy_seize_color_40x60.png 40 60
 
 g-create = !->
   g.stage.background-color = \#124184

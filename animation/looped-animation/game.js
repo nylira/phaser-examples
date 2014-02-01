@@ -8,7 +8,7 @@
     update: update
   });
   function preload(){
-    return game.load.atlasJSONHash('bot', 'assets/running_bot.png', 'assets/running_bot.json');
+    return game.load.atlasJSONHash('bot', '../../../phaser/examples/assets/running_bot.png', '../../../phaser/examples/assets/running_bot.json');
   }
   function create(){
     bot = game.add.sprite(200, 200, 'bot');

@@ -8,9 +8,9 @@
     update: update
   });
   function preload(){
-    game.load.image('background', 'assets/starfield.jpg');
-    game.load.image('ufo', 'assets/space-baddie.png');
-    return game.load.image('player', 'assets/phaser-dude.png');
+    game.load.image('background', '../../../phaser/examples/assets/starfield.jpg');
+    game.load.image('ufo', '../../../phaser/examples/assets/space-baddie.png');
+    return game.load.image('player', '../../../phaser/examples/assets/phaser-dude.png');
   }
   function create(){
     var i$, i, enemy;

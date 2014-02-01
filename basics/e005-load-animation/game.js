@@ -7,7 +7,7 @@
     create: create
   });
   function preload(){
-    return game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
+    return game.load.spritesheet('dude', '../../../phaser/examples/assets/dude.png', 32, 48);
   }
   function create(){
     var dude;

@@ -4,7 +4,7 @@
   var left, right, selected, preload, create, select, render, g;
   selected = null;
   preload = function(){
-    return g.load.spritesheet('item', 'assets/buttons/number-buttons-90x90.png', 90, 90);
+    return g.load.spritesheet('item', '../../../phaser/examples/assets/buttons/number-buttons-90x90.png', 90, 90);
   };
   create = function(){
     var item, i$, i;

@@ -3,7 +3,7 @@
   'use strict';
   var b, gPreload, gCreate, gUpdate, gRender, spriteOver, spriteOut, g;
   gPreload = function(){
-    g.load.image('img-bunny', 'assets/sprites/bunny.png');
+    g.load.image('img-bunny', '../../../phaser/examples/assets/sprites/bunny.png');
   };
   gCreate = function(){
     b = g.add.sprite(g.world.centerX, g.world.centerY, 'img-bunny');

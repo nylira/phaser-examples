@@ -6,8 +6,8 @@
   timer = 1000;
   delay = 1000;
   preload = function(){
-    g.load.spritesheet('item', 'assets/buttons/number-buttons-90x90.png', 90, 90);
-    return g.load.image('revive-btn', 'assets/buttons/revive-button.png');
+    g.load.spritesheet('item', '../../../phaser/examples/assets/buttons/number-buttons-90x90.png', 90, 90);
+    return g.load.image('revive-btn', '../../../phaser/examples/assets/buttons/revive-button.png');
   };
   create = function(){
     return map(createSprites, [0, 1, 2]);

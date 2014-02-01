@@ -9,7 +9,7 @@
     render: render
   });
   function preload(){
-    return game.load.image('atari', 'assets/sprites/atari130xe.png');
+    return game.load.image('atari', '../../../phaser/examples/assets/sprites/atari130xe.png');
   }
   function create(){
     var sprite;

@@ -3,14 +3,14 @@
 var game-images, group-enemies
 
 game-preload = ->
-  game.load.image \image-atari1 \assets/sprites/atari130xe.png
-  game.load.image \image-atari2 \assets/sprites/atari800xl.png
-  game.load.image \image-atari4 \assets/sprites/atari800.png
-  game.load.image \image-sonic \assets/sprites/sonic_havok_sanity.png
-  game.load.image \image-duck \assets/sprites/darkwing_crazy.png
-  game.load.image \image-firstaid \assets/sprites/firstaid.png
-  game.load.image \image-diamond \assets/sprites/diamond.png
-  game.load.image \image-mushroom \assets/sprites/mushroom2.png
+  game.load.image \image-atari1 \../../../phaser/examples/assets/sprites/atari130xe.png
+  game.load.image \image-atari2 \../../../phaser/examples/assets/sprites/atari800xl.png
+  game.load.image \image-atari4 \../../../phaser/examples/assets/sprites/atari800.png
+  game.load.image \image-sonic \../../../phaser/examples/assets/sprites/sonic_havok_sanity.png
+  game.load.image \image-duck \../../../phaser/examples/assets/sprites/darkwing_crazy.png
+  game.load.image \image-firstaid \../../../phaser/examples/assets/sprites/firstaid.png
+  game.load.image \image-diamond \../../../phaser/examples/assets/sprites/diamond.png
+  game.load.image \image-mushroom \../../../phaser/examples/assets/sprites/mushroom2.png
 
 game-create = ->
   game-images := game.cache.get-image-keys!

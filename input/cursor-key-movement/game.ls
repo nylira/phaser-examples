@@ -3,8 +3,8 @@ var cursors
 
 g-preload = ->
   game.stage.background-color = \#007236
-  game.load.image \image-mushroom \assets/sprites/mushroom2.png
-  game.load.image \image-phaser \assets/sprites/sonic_havok_sanity.png
+  game.load.image \image-mushroom \../../../phaser/examples/assets/sprites/mushroom2.png
+  game.load.image \image-phaser \../../../phaser/examples/assets/sprites/sonic_havok_sanity.png
 
 g-create = ->
   game.world.set-bounds 0 0 1600 1200

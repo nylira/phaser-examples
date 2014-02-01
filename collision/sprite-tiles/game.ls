@@ -8,8 +8,8 @@ game = new Phaser.Game(800, 600, Phaser.CANVAS, '',
 )
 
 function preload
-  game.load.spritesheet \tiles \assets/tiles/platformer_tiles.png 16 16
-  game.load.image \carrot \assets/sprites/carrot.png
+  game.load.spritesheet \tiles \../../../phaser/examples/assets/tiles/platformer_tiles.png 16 16
+  game.load.image \carrot \../../../phaser/examples/assets/sprites/carrot.png
 
 var tiles, sprite
 

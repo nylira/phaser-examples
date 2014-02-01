@@ -7,7 +7,7 @@ game = new Phaser.Game(800, 600, Phaser.AUTO, '',
 )
 
 function preload
-  game.load.image \mushroom \assets/sprites/mushroom2.png
+  game.load.image \mushroom \../../../phaser/examples/assets/sprites/mushroom2.png
 
 var mushroom, texture
 

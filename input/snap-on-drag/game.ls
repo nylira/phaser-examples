@@ -2,9 +2,9 @@
 #{map} = require \prelude-ls
 
 g-preload = !->
-  g.load.image \grid \assets/tests/debug-grid-1920x1920.png
-  g.load.image \atari1 \assets/sprites/atari130xe.png
-  g.load.image \atari2 \assets/sprites/atari800xl.png
+  g.load.image \grid \../../../phaser/examples/assets/tests/debug-grid-1920x1920.png
+  g.load.image \atari1 \../../../phaser/examples/assets/sprites/atari130xe.png
+  g.load.image \atari2 \../../../phaser/examples/assets/sprites/atari800xl.png
 
 g-create = !->
   g.add.sprite 0 0 \grid

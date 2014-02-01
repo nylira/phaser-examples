@@ -8,8 +8,8 @@ game = new Phaser.Game(800, 600, Phaser.CANVAS, '',
 var friend-and-foe, enemies
 
 function preload
-  game.load.image \ufo \assets/sprites/ufo.png
-  game.load.image \baddie \assets/sprites/space-baddie.png
+  game.load.image \ufo \../../../phaser/examples/assets/sprites/ufo.png
+  game.load.image \baddie \../../../phaser/examples/assets/sprites/space-baddie.png
 
 function create
   friend-and-foe = game.add.group!

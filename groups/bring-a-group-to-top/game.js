@@ -9,12 +9,12 @@
     render: render
   });
   function preload(){
-    game.load.image('beast', 'assets/pics/shadow_of_the_beast2_karamoon.png');
-    game.load.image('snot', 'assets/pics/nslide_snot.png');
-    game.load.image('atari1', 'assets/sprites/atari130xe.png');
-    game.load.image('sonic', 'assets/sprites/sonic_havok_sanity.png');
-    game.load.image('coke', 'assets/sprites/cokecan.png');
-    return game.load.image('disk', 'assets/sprites/oz_pov_melting_disk.png');
+    game.load.image('beast', '../../../phaser/examples/assets/pics/shadow_of_the_beast2_karamoon.png');
+    game.load.image('snot', '../../../phaser/examples/assets/pics/nslide_snot.png');
+    game.load.image('atari1', '../../../phaser/examples/assets/sprites/atari130xe.png');
+    game.load.image('sonic', '../../../phaser/examples/assets/sprites/sonic_havok_sanity.png');
+    game.load.image('coke', '../../../phaser/examples/assets/sprites/cokecan.png');
+    return game.load.image('disk', '../../../phaser/examples/assets/sprites/oz_pov_melting_disk.png');
   }
   function create(){
     var bg, i$, i, tmp, snot;

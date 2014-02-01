@@ -3,8 +3,8 @@
 var items
 
 preload = ->
-  g.load.spritesheet \item \assets/buttons/number-buttons-90x90.png 90 90
-  g.load.image \rect \assets/tests/200x100corners.png
+  g.load.spritesheet \item \../../../phaser/examples/assets/buttons/number-buttons-90x90.png 90 90
+  g.load.image \rect \../../../phaser/examples/assets/tests/200x100corners.png
 
 create = ->
   items := g.add.group!

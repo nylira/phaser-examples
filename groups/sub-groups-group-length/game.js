@@ -4,9 +4,9 @@
   var map, grpFriends, grpEnemies, grpNormalMobs, grpPurpleMobs, preload, create, render, createMob, g;
   map = require('prelude-ls').map;
   preload = function(){
-    g.load.image('sprite-ufo', 'assets/sprites/ufo.png');
-    g.load.image('sprite-normal-mob', 'assets/sprites/space-baddie.png');
-    return g.load.image('sprite-purple-mob', 'assets/sprites/space-baddie-purple.png');
+    g.load.image('sprite-ufo', '../../../phaser/examples/assets/sprites/ufo.png');
+    g.load.image('sprite-normal-mob', '../../../phaser/examples/assets/sprites/space-baddie.png');
+    return g.load.image('sprite-purple-mob', '../../../phaser/examples/assets/sprites/space-baddie-purple.png');
   };
   create = function(){
     grpFriends = g.add.group();

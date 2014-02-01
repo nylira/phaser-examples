@@ -4,7 +4,7 @@
 var first-group
 
 preload = ->
-  g.load.image \sonic \assets/sprites/sonic_havok_sanity.png
+  g.load.image \sonic \../../../phaser/examples/assets/sprites/sonic_havok_sanity.png
 
 create = ->
   first-group := g.add.group!

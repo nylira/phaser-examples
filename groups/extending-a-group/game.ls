@@ -2,8 +2,8 @@
 {map} = require \prelude-ls
 
 preload = ->
-  g.load.image \ufo \assets/sprites/ufo.png
-  g.load.image \baddie \assets/sprites/space-baddie.png
+  g.load.image \ufo \../../../phaser/examples/assets/sprites/ufo.png
+  g.load.image \baddie \../../../phaser/examples/assets/sprites/space-baddie.png
 
 create = ->
   group = new monster-group g

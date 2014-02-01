@@ -7,9 +7,9 @@
     create: create
   });
   function preload(){
-    game.load.atlasXML('seacreatures', 'assets/seacreatures.png', 'assets/seacreatures.xml');
-    game.load.image('undersea', 'assets/undersea.jpg');
-    return game.load.image('coral', 'assets/seabed.png');
+    game.load.atlasXML('seacreatures', '../../../phaser/examples/assets/seacreatures.png', '../../../phaser/examples/assets/seacreatures.xml');
+    game.load.image('undersea', '../../../phaser/examples/assets/undersea.jpg');
+    return game.load.image('coral', '../../../phaser/examples/assets/seabed.png');
   }
   function create(){
     var jellyfish, crab, greenJellyfish, octopus, purpleFish, seahorse, squid, stingray, flyingfish;

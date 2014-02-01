@@ -8,9 +8,9 @@ game = new Phaser.Game(
 )
 
 function preload()
-  game.load.image \background \assets/starfield.jpg
-  game.load.image \ufo \assets/space-baddie.png
-  game.load.image \player \assets/phaser-dude.png
+  game.load.image \background \../../../phaser/examples/assets/starfield.jpg
+  game.load.image \ufo \../../../phaser/examples/assets/space-baddie.png
+  game.load.image \player \../../../phaser/examples/assets/phaser-dude.png
 
 var player, fixed, cursors
 var enemies

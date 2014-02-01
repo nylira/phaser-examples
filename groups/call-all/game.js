@@ -4,8 +4,8 @@
   var ref$, map, each, preload, create, render, createItems, createKillableSprite, kill, reviveAll, g;
   ref$ = require('prelude-ls'), map = ref$.map, each = ref$.each;
   preload = function(){
-    g.load.spritesheet('item', 'assets/buttons/number-buttons-90x90.png', 90, 90);
-    return g.load.image('revive-button', 'assets/buttons/revive-button.png');
+    g.load.spritesheet('item', '../../../phaser/examples/assets/buttons/number-buttons-90x90.png', 90, 90);
+    return g.load.image('revive-button', '../../../phaser/examples/assets/buttons/revive-button.png');
   };
   create = function(){
     map(createItems, [0, 1, 2]);

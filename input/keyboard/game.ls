@@ -6,16 +6,16 @@ speed = 4
 g-preload = !->
   g.world.set-bounds 0 0 1280 600
 
-  g.load.image \img-ground \assets/tests/ground-2x.png
-  g.load.image \img-river \assets/tests/river-2x.png
-  g.load.image \img-sky \assets/tests/sky-2x.png
-  g.load.image \img-cloud0 \assets/tests/cloud-big-2x.png
-  g.load.image \img-cloud1 \assets/tests/cloud-narrow-2x.png
-  g.load.image \img-cloud2 \assets/tests/cloud-small-2x.png
+  g.load.image \img-ground \../../../phaser/examples/assets/tests/ground-2x.png
+  g.load.image \img-river \../../../phaser/examples/assets/tests/river-2x.png
+  g.load.image \img-sky \../../../phaser/examples/assets/tests/sky-2x.png
+  g.load.image \img-cloud0 \../../../phaser/examples/assets/tests/cloud-big-2x.png
+  g.load.image \img-cloud1 \../../../phaser/examples/assets/tests/cloud-narrow-2x.png
+  g.load.image \img-cloud2 \../../../phaser/examples/assets/tests/cloud-small-2x.png
 
-  g.load.spritesheet \spr-button \assets/buttons/arrow-button.png 112 95
+  g.load.spritesheet \spr-button \../../../phaser/examples/assets/buttons/arrow-button.png 112 95
 
-  g.load.image \img-ufo \assets/sprites/ufo.png
+  g.load.image \img-ufo \../../../phaser/examples/assets/sprites/ufo.png
 
 g-create = !->
   g.add.tile-sprite 0 0 1280 600 \img-sky

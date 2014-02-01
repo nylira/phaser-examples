@@ -9,8 +9,8 @@ game = new Phaser.Game(800, 600, Phaser.WEBGL, '',
 var bg, filter
 
 function preload
-  game.load.image \phaser \assets/sprites/phaser2.png
-  game.load.image \texture \assets/textures/ooze.png
+  game.load.image \phaser \../../../phaser/examples/assets/sprites/phaser2.png
+  game.load.image \texture \../../../phaser/examples/assets/textures/ooze.png
   game.load.script \filter \filters/Tunnel.js
 
 function create

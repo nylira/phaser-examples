@@ -4,7 +4,7 @@ var left, right
 selected = null
 
 preload = ->
-  g.load.spritesheet \item \assets/buttons/number-buttons-90x90.png 90 90
+  g.load.spritesheet \item \../../../phaser/examples/assets/buttons/number-buttons-90x90.png 90 90
 
 create = !->
   left := g.add.group!

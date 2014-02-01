@@ -7,7 +7,7 @@ game = new Phaser.Game(800, 600, Phaser.AUTO, '',
 )
 
 function preload
-  game.load.image \ball \assets/sprites/pangball.png
+  game.load.image \ball \../../../phaser/examples/assets/sprites/pangball.png
 
 var ball, texture
 

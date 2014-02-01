@@ -8,14 +8,14 @@
     render: render
   });
   function preload(){
-    game.load.spritesheet('button', 'assets/button_sprite_sheet.png', 193, 71);
-    game.load.image('sky0', 'assets/skies/space2.png');
-    game.load.image('sky1', 'assets/skies/cavern1.png');
-    game.load.image('sky2', 'assets/skies/chrome.png');
-    game.load.image('sky3', 'assets/skies/fire.png');
-    game.load.image('sky4', 'assets/skies/fog.png');
-    game.load.image('sky5', 'assets/skies/sky1.png');
-    return game.load.image('sky6', 'assets/skies/toxic.png');
+    game.load.spritesheet('button', '../../../phaser/examples/assets/button_sprite_sheet.png', 193, 71);
+    game.load.image('sky0', '../../../phaser/examples/assets/skies/space2.png');
+    game.load.image('sky1', '../../../phaser/examples/assets/skies/cavern1.png');
+    game.load.image('sky2', '../../../phaser/examples/assets/skies/chrome.png');
+    game.load.image('sky3', '../../../phaser/examples/assets/skies/fire.png');
+    game.load.image('sky4', '../../../phaser/examples/assets/skies/fog.png');
+    game.load.image('sky5', '../../../phaser/examples/assets/skies/sky1.png');
+    return game.load.image('sky6', '../../../phaser/examples/assets/skies/toxic.png');
   }
   function create(){
     background = game.add.sprite(0, 0, 'sky0');

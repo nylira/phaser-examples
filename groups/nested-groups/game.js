@@ -4,8 +4,8 @@
   var map, ballsGroup, shipsGroup, preload, create, update, g;
   map = require('prelude-ls').map;
   preload = function(){
-    g.load.image('ball', 'assets/sprites/pangball.png');
-    return g.load.image('arrow', 'assets/sprites/asteroids_ship.png');
+    g.load.image('ball', '../../../phaser/examples/assets/sprites/pangball.png');
+    return g.load.image('arrow', '../../../phaser/examples/assets/sprites/asteroids_ship.png');
   };
   create = function(){
     var i$, i;

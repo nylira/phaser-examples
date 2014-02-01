@@ -3,8 +3,8 @@
 var sprite1, sprite2
 
 g-preload = !->
-  g.load.image \wizball \assets/sprites/wizball.png
-  g.load.image \mushroom \assets/sprites/mushroom2.png
+  g.load.image \wizball \../../../phaser/examples/assets/sprites/wizball.png
+  g.load.image \mushroom \../../../phaser/examples/assets/sprites/mushroom2.png
 
 g-create = !->
   g.stage.background-color = \#2d2d2d

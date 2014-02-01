@@ -5,7 +5,7 @@
   map = require('prelude-ls').map;
   baseAlphaIncSpeed = 0.006;
   preload = function(){
-    return g.load.spritesheet('item', 'assets/buttons/number-buttons-90x90.png', 90, 90);
+    return g.load.spritesheet('item', '../../../phaser/examples/assets/buttons/number-buttons-90x90.png', 90, 90);
   };
   create = function(){
     return map(createSprites, [0, 1, 2]);

@@ -4,8 +4,8 @@
   var sprite, bullet, bullets, bulletTime, gPreload, gCreate, gUpdate, bulletFire, bulletReset, game;
   bulletTime = 0;
   gPreload = function(){
-    game.load.image('image-phaser', 'assets/sprites/phaser-dude.png');
-    game.load.image('image-bullet', 'assets/misc/bullet0.png');
+    game.load.image('image-phaser', '../../../phaser/examples/assets/sprites/phaser-dude.png');
+    game.load.image('image-bullet', '../../../phaser/examples/assets/misc/bullet0.png');
   };
   gCreate = function(){
     game.stage.backgroundColor = '#2d2d2d';

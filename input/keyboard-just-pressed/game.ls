@@ -4,8 +4,8 @@ var sprite, bullet, bullets
 bullet-time = 0
 
 g-preload = !->
-  game.load.image \image-phaser \assets/sprites/phaser-dude.png
-  game.load.image \image-bullet \assets/misc/bullet0.png
+  game.load.image \image-phaser \../../../phaser/examples/assets/sprites/phaser-dude.png
+  game.load.image \image-bullet \../../../phaser/examples/assets/misc/bullet0.png
 
 g-create = !->
   game.stage.background-color = \#2d2d2d

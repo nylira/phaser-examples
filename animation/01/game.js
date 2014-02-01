@@ -8,8 +8,8 @@
     render: render
   });
   function preload(){
-    game.load.atlasJSONHash('bot', 'assets/running_bot.png', 'assets/running_bot.json');
-    return game.load.spritesheet('mummy', 'assets/metalslug_mummy37x45.png', 37, 45, 18);
+    game.load.atlasJSONHash('bot', '../../../phaser/examples/assets/running_bot.png', '../../../phaser/examples/assets/running_bot.json');
+    return game.load.spritesheet('mummy', '../../../phaser/examples/assets/metalslug_mummy37x45.png', 37, 45, 18);
   }
   function create(){
     bot = game.add.sprite(200, 200, 'bot');

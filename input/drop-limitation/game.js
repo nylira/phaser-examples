@@ -4,7 +4,7 @@
   var map, gamePreload, gameCreate, gameRender, addItem, fixLocation, game;
   map = require('prelude-ls').map;
   gamePreload = function(){
-    return game.load.spritesheet('image-item', 'assets/buttons/number-buttons-90x90.png', 90, 90);
+    return game.load.spritesheet('image-item', '../../../phaser/examples/assets/buttons/number-buttons-90x90.png', 90, 90);
   };
   gameCreate = function(){
     return map(addItem, [0, 1, 2, 3, 4, 5]);

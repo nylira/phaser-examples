@@ -6,7 +6,7 @@ game = new Phaser.Game(1200, 768, Phaser.AUTO, '', {
 })
 
 function preload()
-  game.load.spritesheet('dude', 'assets/dude.png', 32, 48)
+  game.load.spritesheet('dude', '../../../phaser/examples/assets/dude.png', 32, 48)
 
 function create()
   dude = game.add.sprite(200, 200, 'dude')

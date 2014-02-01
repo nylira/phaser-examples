@@ -4,8 +4,8 @@ timer = 1000       # timer starts at 1000 to prevent calling too early
 delay = 1000       # duration between function calls
 
 preload = ->
-  g.load.spritesheet \item \assets/buttons/number-buttons-90x90.png 90 90
-  g.load.image \revive-btn \assets/buttons/revive-button.png
+  g.load.spritesheet \item \../../../phaser/examples/assets/buttons/number-buttons-90x90.png 90 90
+  g.load.image \revive-btn \../../../phaser/examples/assets/buttons/revive-button.png
 
 create = ->
   map create-sprites, [0 til 3]

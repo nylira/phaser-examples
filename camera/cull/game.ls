@@ -12,7 +12,7 @@ var alien
 var cursors
 
 function preload()
-  game.load.image \alien \assets/ra_dont_crack_under_pressure.png
+  game.load.image \alien \../../../phaser/examples/assets/ra_dont_crack_under_pressure.png
 
 function create()
   game.stage.background-color = 'hsl(210,50%,25%)'

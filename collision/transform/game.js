@@ -9,9 +9,9 @@
     render: render
   });
   function preload(){
-    game.load.image('atari', 'assets/sprites/atari130xe.png');
-    game.load.image('mushroom', 'assets/sprites/mushroom2.png');
-    return game.load.image('flectrum', 'assets/sprites/flectrum.png');
+    game.load.image('atari', '../../../phaser/examples/assets/sprites/atari130xe.png');
+    game.load.image('mushroom', '../../../phaser/examples/assets/sprites/mushroom2.png');
+    return game.load.image('flectrum', '../../../phaser/examples/assets/sprites/flectrum.png');
   }
   function create(){
     game.stage.backgroundColor = '#2d2d2d';

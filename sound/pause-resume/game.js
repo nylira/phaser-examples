@@ -9,8 +9,8 @@
     render: render
   });
   function preload(){
-    game.load.image('alien', 'assets/ra_dont_crack_under_pressure.png');
-    return game.load.audio('boden', ['assets/bodenstaendig_2000_in_rock_4bit.mp3', 'assets/bodenstaendig_2000_in_rock_4bit.ogg']);
+    game.load.image('alien', '../../../phaser/examples/assets/ra_dont_crack_under_pressure.png');
+    return game.load.audio('boden', ['../../../phaser/examples/assets/bodenstaendig_2000_in_rock_4bit.mp3', '../../../phaser/examples/assets/bodenstaendig_2000_in_rock_4bit.ogg']);
   }
   function create(){
     game.stage.backgroundColor = 'hsl(210,50%,25%)';

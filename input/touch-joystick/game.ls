@@ -5,7 +5,7 @@ ufo-speed = 200
 
 g-preload = !->
   g.world.set-bounds 0 0 800 600
-  g.load.image \ufo \assets/sprites/ufo.png
+  g.load.image \ufo \../../../phaser/examples/assets/sprites/ufo.png
 
 g-create = !->
   ufo := g.add.sprite 320 240 \ufo

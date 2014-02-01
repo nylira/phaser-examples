@@ -3,7 +3,7 @@
   'use strict';
   var sprite, keyUp, keyDown, keyLeft, keyRight, gamePreload, gameCreate, gameUpdate, game;
   gamePreload = function(){
-    return game.load.image('image-phaser', 'assets/sprites/phaser-dude.png');
+    return game.load.image('image-phaser', '../../../phaser/examples/assets/sprites/phaser-dude.png');
   };
   gameCreate = function(){
     game.stage.backgroundColor = '#736357';

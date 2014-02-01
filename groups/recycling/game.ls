@@ -3,8 +3,8 @@
 var enemies
 
 preload = ->
-  g.load.image \baddie \assets/sprites/space-baddie.png
-  g.load.spritesheet \button \assets/buttons/baddie-buttons.png 224 70
+  g.load.image \baddie \../../../phaser/examples/assets/sprites/space-baddie.png
+  g.load.spritesheet \button \../../../phaser/examples/assets/buttons/baddie-buttons.png 224 70
 
 create = ->
   enemies := g.add.group!

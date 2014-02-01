@@ -7,10 +7,10 @@ game = new Phaser.Game(
 )
 
 function preload()
-  game.load.atlas-XML \seacreatures \assets/seacreatures.png \assets/seacreatures.xml
+  game.load.atlas-XML \seacreatures \../../../phaser/examples/assets/seacreatures.png \../../../phaser/examples/assets/seacreatures.xml
 
-  game.load.image \undersea \assets/undersea.jpg
-  game.load.image \coral \assets/seabed.png
+  game.load.image \undersea \../../../phaser/examples/assets/undersea.jpg
+  game.load.image \coral \../../../phaser/examples/assets/seabed.png
 
 function create()
 

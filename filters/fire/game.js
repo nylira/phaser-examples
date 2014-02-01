@@ -8,7 +8,7 @@
     update: update
   });
   function preload(){
-    game.load.image('phaser', 'assets/sprites/phaser2.png');
+    game.load.image('phaser', '../../../phaser/examples/assets/sprites/phaser2.png');
     return game.load.script('filter', 'filters/Fire.js');
   }
   function create(){

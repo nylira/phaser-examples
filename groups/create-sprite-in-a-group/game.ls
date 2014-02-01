@@ -4,8 +4,8 @@
 var friend-and-foe, enemies
 
 preload = ->
-  g.load.image \ufo \assets/sprites/ufo.png
-  g.load.image \baddie \assets/sprites/space-baddie.png
+  g.load.image \ufo \../../../phaser/examples/assets/sprites/ufo.png
+  g.load.image \baddie \../../../phaser/examples/assets/sprites/space-baddie.png
 
 create = ->
   friend-and-foe := g.add.group!

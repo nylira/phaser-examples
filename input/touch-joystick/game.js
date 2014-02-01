@@ -5,7 +5,7 @@
   ufoSpeed = 200;
   gPreload = function(){
     g.world.setBounds(0, 0, 800, 600);
-    g.load.image('ufo', 'assets/sprites/ufo.png');
+    g.load.image('ufo', '../../../phaser/examples/assets/sprites/ufo.png');
   };
   gCreate = function(){
     ufo = g.add.sprite(320, 240, 'ufo');

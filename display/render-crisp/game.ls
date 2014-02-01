@@ -6,8 +6,8 @@ game = new Phaser.Game(800, 600, Phaser.AUTO, '',
 )
 
 function preload
-  game.load.image \boss \assets/misc/boss1.png
-  game.load.spritesheet \button \assets/buttons/button_sprite_sheet.png 193 71
+  game.load.image \boss \../../../phaser/examples/assets/misc/boss1.png
+  game.load.spritesheet \button \../../../phaser/examples/assets/buttons/button_sprite_sheet.png 193 71
 
 var boss, button
 

@@ -3,7 +3,7 @@
   'use strict';
   var sprite, sprite2, gPreload, gCreate, gUpdate, gRender, g;
   gPreload = function(){
-    g.load.spritesheet('gameboy', 'assets/sprites/gameboy_seize_color_40x60.png', 40, 60);
+    g.load.spritesheet('gameboy', '../../../phaser/examples/assets/sprites/gameboy_seize_color_40x60.png', 40, 60);
   };
   gCreate = function(){
     g.stage.backgroundColor = '#124184';

@@ -8,7 +8,7 @@
     update: update
   });
   function preload(){
-    return game.load.image('ball', 'assets/sprites/pangball.png');
+    return game.load.image('ball', '../../../phaser/examples/assets/sprites/pangball.png');
   }
   function create(){
     texture = game.add.renderTexture('mousetrail', 800, 600);

@@ -12,8 +12,8 @@ var cursors
 var shrooms
 
 function preload
-  game.load.image \backdrop \assets/remember-me.jpg
-  game.load.image \card \assets/mana_card.png
+  game.load.image \backdrop \../../../phaser/examples/assets/remember-me.jpg
+  game.load.image \card \../../../phaser/examples/assets/mana_card.png
 
 var card
 const Keys = Phaser.Keyboard

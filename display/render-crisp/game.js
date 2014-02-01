@@ -7,8 +7,8 @@
     create: create
   });
   function preload(){
-    game.load.image('boss', 'assets/misc/boss1.png');
-    return game.load.spritesheet('button', 'assets/buttons/button_sprite_sheet.png', 193, 71);
+    game.load.image('boss', '../../../phaser/examples/assets/misc/boss1.png');
+    return game.load.spritesheet('button', '../../../phaser/examples/assets/buttons/button_sprite_sheet.png', 193, 71);
   }
   function create(){
     boss = game.add.sprite(game.world.centerX, game.world.centerY, 'boss');

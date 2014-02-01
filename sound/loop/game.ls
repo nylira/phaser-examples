@@ -7,8 +7,8 @@ game = new Phaser.Game(
 )
 
 function preload()
-  game.load.image \spyro \assets/spyro.png
-  game.load.audio \squirt [\assets/squit.mp3 \assets\squit.ogg]
+  game.load.image \spyro \../../../phaser/examples/assets/spyro.png
+  game.load.audio \squirt [\../../../phaser/examples/assets/squit.mp3 \../../../phaser/examples/assets\squit.ogg]
 
 function create()
   game.stage.background-color = 'hsl(25,50%,95%)'

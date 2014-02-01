@@ -10,11 +10,11 @@
   bulletTime = 0;
   score = 0;
   function preload(){
-    game.load.image('phaser', 'assets/phaser-dude.png');
-    game.load.image('bullet', 'assets/bullet0.png');
-    game.load.audio('laser', 'assets/laser1.mp3');
-    game.load.audio('splat', 'assets/splat1.mp3');
-    return game.load.spritesheet('veggies', 'assets/fruitnveg32wh37.png', 32, 32);
+    game.load.image('phaser', '../../../phaser/examples/assets/phaser-dude.png');
+    game.load.image('bullet', '../../../phaser/examples/assets/bullet0.png');
+    game.load.audio('laser', '../../../phaser/examples/assets/laser1.mp3');
+    game.load.audio('splat', '../../../phaser/examples/assets/splat1.mp3');
+    return game.load.spritesheet('veggies', '../../../phaser/examples/assets/fruitnveg32wh37.png', 32, 32);
   }
   function create(){
     var i$, i, c, b;

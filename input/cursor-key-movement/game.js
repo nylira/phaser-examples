@@ -4,8 +4,8 @@
   var cursors, gPreload, gCreate, gUpdate, gRender, game;
   gPreload = function(){
     game.stage.backgroundColor = '#007236';
-    game.load.image('image-mushroom', 'assets/sprites/mushroom2.png');
-    return game.load.image('image-phaser', 'assets/sprites/sonic_havok_sanity.png');
+    game.load.image('image-mushroom', '../../../phaser/examples/assets/sprites/mushroom2.png');
+    return game.load.image('image-phaser', '../../../phaser/examples/assets/sprites/sonic_havok_sanity.png');
   };
   gCreate = function(){
     var i$, i;

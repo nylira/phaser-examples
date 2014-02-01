@@ -9,7 +9,7 @@ game = new Phaser.Game(800, 600, Phaser.WEBGL, '',
 var bg, filter
 
 function preload
-  game.load.image \phaser \assets/sprites/phaser2.png
+  game.load.image \phaser \../../../phaser/examples/assets/sprites/phaser2.png
   game.load.script \filter \filters/LightBeam.js
 
 function create

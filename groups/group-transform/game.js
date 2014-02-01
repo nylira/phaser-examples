@@ -4,12 +4,12 @@
   var map, robot, eye, body, leftArm, rightArm, leftLeg, rightLeg, preload, create, render, enableDrag, g;
   map = require('prelude-ls').map;
   preload = function(){
-    g.load.image('eye', 'assets/sprites/robot/eye.png');
-    g.load.image('body', 'assets/sprites/robot/body.png');
-    g.load.image('arm-l', 'assets/sprites/robot/arm-l.png');
-    g.load.image('arm-r', 'assets/sprites/robot/arm-r.png');
-    g.load.image('leg-l', 'assets/sprites/robot/leg-l.png');
-    return g.load.image('leg-r', 'assets/sprites/robot/leg-r.png');
+    g.load.image('eye', '../../../phaser/examples/assets/sprites/robot/eye.png');
+    g.load.image('body', '../../../phaser/examples/assets/sprites/robot/body.png');
+    g.load.image('arm-l', '../../../phaser/examples/assets/sprites/robot/arm-l.png');
+    g.load.image('arm-r', '../../../phaser/examples/assets/sprites/robot/arm-r.png');
+    g.load.image('leg-l', '../../../phaser/examples/assets/sprites/robot/leg-l.png');
+    return g.load.image('leg-r', '../../../phaser/examples/assets/sprites/robot/leg-r.png');
   };
   create = function(){
     var offsetX, offsetY;

@@ -4,8 +4,8 @@
   var map, spriteAtari1, spriteAtari2, gamePreload, gameCreate, gameRender, swapSprites, game;
   map = require('prelude-ls').map;
   gamePreload = function(){
-    game.load.image('image-atari1', 'assets/sprites/atari130xe.png');
-    return game.load.image('image-atari2', 'assets/sprites/atari800xl.png');
+    game.load.image('image-atari1', '../../../phaser/examples/assets/sprites/atari130xe.png');
+    return game.load.image('image-atari2', '../../../phaser/examples/assets/sprites/atari800xl.png');
   };
   gameCreate = function(){
     spriteAtari1 = game.add.sprite(100, 100, 'image-atari1');

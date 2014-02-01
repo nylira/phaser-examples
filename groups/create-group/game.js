@@ -4,7 +4,7 @@
   var map, firstGroup, preload, create, render, createSprite, logGroupAdd, g;
   map = require('prelude-ls').map;
   preload = function(){
-    return g.load.image('sonic', 'assets/sprites/sonic_havok_sanity.png');
+    return g.load.image('sonic', '../../../phaser/examples/assets/sprites/sonic_havok_sanity.png');
   };
   create = function(){
     firstGroup = g.add.group();

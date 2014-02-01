@@ -3,12 +3,12 @@
 var robot, eye, body, left-arm, right-arm, left-leg, right-leg
 
 preload = ->
-  g.load.image \eye \assets/sprites/robot/eye.png
-  g.load.image \body \assets/sprites/robot/body.png
-  g.load.image \arm-l \assets/sprites/robot/arm-l.png
-  g.load.image \arm-r \assets/sprites/robot/arm-r.png
-  g.load.image \leg-l \assets/sprites/robot/leg-l.png
-  g.load.image \leg-r \assets/sprites/robot/leg-r.png
+  g.load.image \eye \../../../phaser/examples/assets/sprites/robot/eye.png
+  g.load.image \body \../../../phaser/examples/assets/sprites/robot/body.png
+  g.load.image \arm-l \../../../phaser/examples/assets/sprites/robot/arm-l.png
+  g.load.image \arm-r \../../../phaser/examples/assets/sprites/robot/arm-r.png
+  g.load.image \leg-l \../../../phaser/examples/assets/sprites/robot/leg-l.png
+  g.load.image \leg-r \../../../phaser/examples/assets/sprites/robot/leg-r.png
 
 create = ->
   offset-x = - g.world.width / 2

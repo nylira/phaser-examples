@@ -5,10 +5,10 @@
   map = require('prelude-ls').map;
   oldY = 0;
   preload = function(){
-    g.load.tilemap('desert', 'assets/tilemaps/maps/desert.json', null, Phaser.Tilemap.TILED_JSON);
-    g.load.image('tiles', 'assets/tilemaps/tiles/tmw_desert_spacing.png');
-    g.load.image('phaser', 'assets/sprites/phaser-dude.png');
-    return g.load.spritesheet('trees', 'assets/maps/walls_1x2.png', 32, 64);
+    g.load.tilemap('desert', '../../../phaser/examples/assets/tilemaps/maps/desert.json', null, Phaser.Tilemap.TILED_JSON);
+    g.load.image('tiles', '../../../phaser/examples/assets/tilemaps/tiles/tmw_desert_spacing.png');
+    g.load.image('phaser', '../../../phaser/examples/assets/sprites/phaser-dude.png');
+    return g.load.spritesheet('trees', '../../../phaser/examples/assets/maps/walls_1x2.png', 32, 64);
   };
   create = function(){
     var desertMap, layer;

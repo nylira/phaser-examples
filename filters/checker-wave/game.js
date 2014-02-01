@@ -8,8 +8,8 @@
     update: update
   });
   function preload(){
-    game.load.image('s', 'assets/pics/undersea.jpg');
-    game.load.image('phaser', 'assets/sprites/phaser.png');
+    game.load.image('s', '../../../phaser/examples/assets/pics/undersea.jpg');
+    game.load.image('phaser', '../../../phaser/examples/assets/sprites/phaser.png');
     return game.load.script('filter', 'filters/CheckerWave.js');
   }
   function create(){

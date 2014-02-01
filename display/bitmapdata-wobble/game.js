@@ -8,7 +8,7 @@
     update: update
   });
   function preload(){
-    return game.load.image('ball', 'assets/sprites/shinyball.png');
+    return game.load.image('ball', '../../../phaser/examples/assets/sprites/shinyball.png');
   }
   waveSize = 8;
   wavePixelChunk = 2;

@@ -7,8 +7,8 @@
     create: create
   });
   function preload(){
-    game.load.image('ufo', 'assets/sprites/ufo.png');
-    return game.load.image('baddie', 'assets/sprites/space-baddie.png');
+    game.load.image('ufo', '../../../phaser/examples/assets/sprites/ufo.png');
+    return game.load.image('baddie', '../../../phaser/examples/assets/sprites/space-baddie.png');
   }
   function create(){
     var friendAndFoe, enemies, i$, i, x, y, ufo;

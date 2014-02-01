@@ -3,7 +3,7 @@
 var sprite
 
 game-preload = ->
-  game.load.image \image-ball \assets/sprites/shinyball.png
+  game.load.image \image-ball \../../../phaser/examples/assets/sprites/shinyball.png
 
 game-create = ->
   sprite := game.add.sprite game.world.center-x, game.world.center-y, \image-ball

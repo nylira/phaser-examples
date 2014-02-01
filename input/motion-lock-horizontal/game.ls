@@ -3,7 +3,7 @@
 var sprite
 
 g-preload = !->
-  g.load.image \img-parsec \assets/sprites/parsec.png
+  g.load.image \img-parsec \../../../phaser/examples/assets/sprites/parsec.png
 
 g-create = !->
   g.stage.background-color = 'hsl(0,0%,33%)'

@@ -3,9 +3,9 @@
 var items, card
 
 preload = ->
-  g.load.image \atari1 \assets/sprites/atari130xe.png
-  g.load.image \atari2 \assets/sprites/atari800xl.png
-  g.load.image \card \assets/sprites/mana_card.png
+  g.load.image \atari1 \../../../phaser/examples/assets/sprites/atari130xe.png
+  g.load.image \atari2 \../../../phaser/examples/assets/sprites/atari800xl.png
+  g.load.image \card \../../../phaser/examples/assets/sprites/mana_card.png
 
 create = ->
   items := g.add.group!

@@ -7,7 +7,7 @@
     create: create
   });
   function preload(){
-    return game.load.image('sky', 'assets/sky.png');
+    return game.load.image('sky', '../../../phaser/examples/assets/sky.png');
   }
   function create(){
     return game.add.sprite(0, 0, 'sky');

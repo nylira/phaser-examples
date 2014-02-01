@@ -3,8 +3,8 @@
 var chick, car, mech, robot, cop
 
 g-preload = !->
-  g.load.image \img-bunny \assets/sprites/bunny.png
-  g.load.atlas \atlas \assets/pics/texturepacker_test.png \assets/pics/texturepacker_test.json
+  g.load.image \img-bunny \../../../phaser/examples/assets/sprites/bunny.png
+  g.load.atlas \atlas \../../../phaser/examples/assets/pics/texturepacker_test.png \../../../phaser/examples/assets/pics/texturepacker_test.json
 
 g-create = !->
   g.stage.background-color = \#404040

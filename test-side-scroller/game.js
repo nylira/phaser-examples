@@ -8,11 +8,11 @@
     update: update
   });
   function preload(){
-    game.load.image('background', 'assets/starfield.jpg');
-    game.load.image('ufo', 'assets/space-baddie.png');
-    game.load.image('star', 'assets/star.png');
-    game.load.image('player', 'assets/phaser-dude.png');
-    return game.load.image('ground', 'assets/steel-32.png');
+    game.load.image('background', '../../../phaser/examples/assets/starfield.jpg');
+    game.load.image('ufo', '../../../phaser/examples/assets/space-baddie.png');
+    game.load.image('star', '../../../phaser/examples/assets/star.png');
+    game.load.image('player', '../../../phaser/examples/assets/phaser-dude.png');
+    return game.load.image('ground', '../../../phaser/examples/assets/steel-32.png');
   }
   score = 0;
   worldVelocity = -200;

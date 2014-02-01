@@ -3,8 +3,8 @@
 var sprite-atari1, sprite-atari2
 
 game-preload = ->
-  game.load.image \image-atari1 \assets/sprites/atari130xe.png
-  game.load.image \image-atari2 \assets/sprites/atari800xl.png
+  game.load.image \image-atari1 \../../../phaser/examples/assets/sprites/atari130xe.png
+  game.load.image \image-atari2 \../../../phaser/examples/assets/sprites/atari800xl.png
 
 game-create = ->
   sprite-atari1 := game.add.sprite 100 100 \image-atari1

@@ -4,8 +4,8 @@
   var map, friendAndFoe, enemies, preload, create, render, createBaddie, g;
   map = require('prelude-ls').map;
   preload = function(){
-    g.load.image('ufo', 'assets/sprites/ufo.png');
-    return g.load.image('baddie', 'assets/sprites/space-baddie.png');
+    g.load.image('ufo', '../../../phaser/examples/assets/sprites/ufo.png');
+    return g.load.image('baddie', '../../../phaser/examples/assets/sprites/space-baddie.png');
   };
   create = function(){
     friendAndFoe = g.add.group();

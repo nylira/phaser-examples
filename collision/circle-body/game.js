@@ -3,8 +3,8 @@
   'use strict';
   var sprite1, sprite2, gPreload, gCreate, gUpdate, gRender, collisionHandler, g;
   gPreload = function(){
-    g.load.image('wizball', 'assets/sprites/wizball.png');
-    g.load.image('mushroom', 'assets/sprites/mushroom2.png');
+    g.load.image('wizball', '../../../phaser/examples/assets/sprites/wizball.png');
+    g.load.image('mushroom', '../../../phaser/examples/assets/sprites/mushroom2.png');
   };
   gCreate = function(){
     g.stage.backgroundColor = '#2d2d2d';

@@ -2,8 +2,8 @@
 {map} = require \prelude-ls
 
 game-preload = ->
-  game.load.image \image-grid \assets/tests/debug-grid-1920x1920.png
-  game.load.image \image-atari1 \assets/sprites/atari800xl.png
+  game.load.image \image-grid \../../../phaser/examples/assets/tests/debug-grid-1920x1920.png
+  game.load.image \image-atari1 \../../../phaser/examples/assets/sprites/atari800xl.png
 
 game-create = ->
   game.add.sprite 0 0 \image-grid

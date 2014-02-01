@@ -7,7 +7,7 @@
     create: create
   });
   function preload(){
-    return game.load.spritesheet('mummy', 'assets/metalslug_mummy37x45.png', 37, 45, 18);
+    return game.load.spritesheet('mummy', '../../../phaser/examples/assets/metalslug_mummy37x45.png', 37, 45, 18);
   }
   function create(){
     var mummy;

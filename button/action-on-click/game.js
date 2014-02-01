@@ -8,8 +8,8 @@
     update: update
   });
   function preload(){
-    game.load.spritesheet('button', 'assets/button_sprite_sheet.png', 193, 71);
-    return game.load.image('background', 'assets/starfield.jpg');
+    game.load.spritesheet('button', '../../../phaser/examples/assets/button_sprite_sheet.png', 193, 71);
+    return game.load.image('background', '../../../phaser/examples/assets/starfield.jpg');
   }
   function create(){
     game.stage.backgroundColor = '#182d3b';

@@ -8,7 +8,7 @@
     update: update
   });
   function preload(){
-    return game.load.image('mushroom', 'assets/sprites/mushroom2.png');
+    return game.load.image('mushroom', '../../../phaser/examples/assets/sprites/mushroom2.png');
   }
   function create(){
     texture = game.add.renderTexture('mousetrail', 800, 600);

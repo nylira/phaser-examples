@@ -4,14 +4,14 @@
 preload = ->
   g.world.set-bounds 0 0 1280 800
 
-  g.load.image \ground \assets/tests/ground-2x.png
-  g.load.image \river \assets/tests/river-2x.png
-  g.load.image \sky \assets/tests/sky-2x.png
-  g.load.image \cloud0 \assets/tests/cloud-big-2x.png
-  g.load.image \cloud1 \assets/tests/cloud-narrow-2x.png
-  g.load.image \cloud2 \assets/tests/cloud-small-2x.png
+  g.load.image \ground \../../../phaser/examples/assets/tests/ground-2x.png
+  g.load.image \river \../../../phaser/examples/assets/tests/river-2x.png
+  g.load.image \sky \../../../phaser/examples/assets/tests/sky-2x.png
+  g.load.image \cloud0 \../../../phaser/examples/assets/tests/cloud-big-2x.png
+  g.load.image \cloud1 \../../../phaser/examples/assets/tests/cloud-narrow-2x.png
+  g.load.image \cloud2 \../../../phaser/examples/assets/tests/cloud-small-2x.png
 
-  g.load.spritesheet \ufo \assets/sprites/ufo.png 24 21
+  g.load.spritesheet \ufo \../../../phaser/examples/assets/sprites/ufo.png 24 21
 
 create = ->
   sky-layer = g.add.group!

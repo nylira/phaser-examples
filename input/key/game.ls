@@ -3,7 +3,7 @@
 var sprite, key-up, key-down, key-left, key-right
 
 game-preload = ->
-  game.load.image \image-phaser \assets/sprites/phaser-dude.png
+  game.load.image \image-phaser \../../../phaser/examples/assets/sprites/phaser-dude.png
 
 game-create = ->
   game.stage.background-color = \#736357

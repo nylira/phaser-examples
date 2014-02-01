@@ -3,7 +3,7 @@
   'use strict';
   var sprite, gPreload, gCreate, gRender, g;
   gPreload = function(){
-    g.load.image('img-parsec', 'assets/sprites/parsec.png');
+    g.load.image('img-parsec', '../../../phaser/examples/assets/sprites/parsec.png');
   };
   gCreate = function(){
     g.stage.backgroundColor = 'hsl(0,0%,33%)';
