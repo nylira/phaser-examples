@@ -9,8 +9,8 @@
     render: render
   });
   function preload(){
-    game.load.image('atari', '../../../phaser/examples/assets/atari130xe.png');
-    return game.load.image('mushroom', '../../../phaser/examples/assets/mushroom2.png');
+    game.load.image('atari', '../../../phaser/examples/assets/sprites/atari130xe.png');
+    return game.load.image('mushroom', '../../../phaser/examples/assets/sprites/mushroom2.png');
   }
   function create(){
     game.stage.backgroundColor = '#2d2d2d';

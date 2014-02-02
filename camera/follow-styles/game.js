@@ -12,15 +12,15 @@
   speed = 4;
   style = 'default';
   function preload(){
-    game.load.image('ground', '../../../phaser/examples/assets/ground-2x.png');
-    game.load.image('river', '../../../phaser/examples/assets/river-2x.png');
-    game.load.image('sky', '../../../phaser/examples/assets/sky-2x.png');
-    game.load.image('cloud0', '../../../phaser/examples/assets/cloud-big-2x.png');
-    game.load.image('cloud1', '../../../phaser/examples/assets/cloud-narrow-2x.png');
-    game.load.image('cloud2', '../../../phaser/examples/assets/cloud-small-2x.png');
-    game.load.image('ufo', '../../../phaser/examples/assets/ufo.png');
-    game.load.image('baddie', '../../../phaser/examples/assets/space-baddie.png');
-    return game.load.spritesheet('button', '../../../phaser/examples/assets/follow-style-button.png', 224, 70);
+    game.load.image('ground', '../../../phaser/examples/assets/tests/ground-2x.png');
+    game.load.image('river', '../../../phaser/examples/assets/tests/river-2x.png');
+    game.load.image('sky', '../../../phaser/examples/assets/tests/sky-2x.png');
+    game.load.image('cloud0', '../../../phaser/examples/assets/tests/cloud-big-2x.png');
+    game.load.image('cloud1', '../../../phaser/examples/assets/tests/cloud-narrow-2x.png');
+    game.load.image('cloud2', '../../../phaser/examples/assets/tests/cloud-small-2x.png');
+    game.load.image('ufo', '../../../phaser/examples/assets/sprites/ufo.png');
+    game.load.image('baddie', '../../../phaser/examples/assets/sprites/space-baddie.png');
+    return game.load.spritesheet('button', '../../../phaser/examples/assets/buttons/follow-style-button.png', 224, 70);
   }
   function create(){
     var i$, i, btn0, btn1, btn2, btn3;

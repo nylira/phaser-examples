@@ -25,6 +25,9 @@ g-update = !->
   g.physics.collide sprite, sprite2
 
 g-render = !->
+  g.debug.render-physics-body sprite.body
+  g.debug.render-physics-body sprite2.body
 
 g = new Phaser.Game(800, 600, Phaser.CANVAS, '',
   preload: g-preload, create: g-create, update: g-update, render: g-render)
+

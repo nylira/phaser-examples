@@ -9,7 +9,7 @@
     render: render
   });
   function preload(){
-    return game.load.image('mushroom', '../../../phaser/examples/assets/mushroom2.png');
+    return game.load.image('mushroom', '../../../phaser/examples/assets/sprites/mushroom2.png');
   }
   function create(){
     var i$, i, shroom;

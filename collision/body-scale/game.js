@@ -23,7 +23,10 @@
   gUpdate = function(){
     g.physics.collide(sprite, sprite2);
   };
-  gRender = function(){};
+  gRender = function(){
+    g.debug.renderPhysicsBody(sprite.body);
+    g.debug.renderPhysicsBody(sprite2.body);
+  };
   g = new Phaser.Game(800, 600, Phaser.CANVAS, '', {
     preload: gPreload,
     create: gCreate,
