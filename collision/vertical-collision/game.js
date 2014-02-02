@@ -17,7 +17,7 @@
     sprite1 = game.add.sprite(300, 50, 'atari');
     sprite1.name = 'atari';
     sprite1.body.velocity.y = 100;
-    sprite1.body.setSize(210, 99, 0, 0);
+    sprite1.body.setRectangle(220, 10, 0, 0);
     sprite2 = game.add.sprite(400, 450, 'mushroom');
     sprite2.name = 'mushroom';
     return sprite2.body.immovable = true;
@@ -30,8 +30,7 @@
   };
   function render(){
     game.debug.renderSpriteInfo(sprite1, 32, 32);
-    game.debug.renderSpriteCollision(sprite1, 400, 32);
-    game.debug.renderSpriteBody(sprite1);
-    return game.debug.renderSpriteBody(sprite2);
+    game.debug.renderPhysicsBody(sprite1.body);
+    return game.debug.renderPhysicsBody(sprite2.body);
   }
 }).call(this);

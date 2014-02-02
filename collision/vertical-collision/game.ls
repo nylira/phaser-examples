@@ -19,11 +19,7 @@ function create
   sprite1 := game.add.sprite 300 50 \atari
   sprite1.name = \atari
   sprite1.body.velocity.y = 100
-
-  # this adjusts to the collision body size
-  # 210x10 is the new width/height
-  # see the offset bounding box for another example
-  sprite1.body.set-size 210 99 0 0
+  sprite1.body.set-rectangle 220 10 0 0
 
   sprite2 := game.add.sprite 400, 450, \mushroom
   sprite2.name = \mushroom
@@ -37,7 +33,6 @@ collision-handler = ->
 
 function render
   game.debug.render-sprite-info sprite1, 32, 32
-  game.debug.render-sprite-collision sprite1, 400, 32
 
-  game.debug.render-sprite-body sprite1
-  game.debug.render-sprite-body sprite2
+  game.debug.render-physics-body sprite1.body
+  game.debug.render-physics-body sprite2.body
