@@ -18,20 +18,20 @@ create = ->
 
 # custom group that creates 30 sprites of the given image
 class monster-group extends Phaser.Group
-  create-sprites: (game, image, action, count) ->
+  create-sprites: (g, image, action, count) ->
     for i til count
       @create-sprite ...
 
-  create-sprite: (game, image, action) ->
-    sprite = @create game.world.random-x, game.world.random-y, image
+  create-sprite: (g, image, action) ->
+    sprite = @create g.world.random-x, g.world.random-y, image
     sprite.name = "Peng's Minion!"
 
     if action == \bounce
-      game.add.tween(sprite).to(
-        y: sprite.y - 100, 2000, Phaser.Easing.Elastic.Out, true, 0, 1000, true)
+      g.add.tween sprite
+      .to y: sprite.y - 100, 2000, Phaser.Easing.Elastic.Out, true, 0, 1000, true
 
     else if action == \slide
-      game.add.tween(sprite).to(
-        x: sprite.x + 200, 4000, Phaser.Easing.Elastic.Out, true, 0, 1000, true)
+      g.add.tween sprite
+      .to x: sprite.x + 200, 4000, Phaser.Easing.Elastic.Out, true, 0, 1000, true
 
 g = new Phaser.Game 800, 600, Phaser.AUTO, '', preload: preload, create: create

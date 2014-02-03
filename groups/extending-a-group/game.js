@@ -19,7 +19,7 @@
   };
   monsterGroup = (function(superclass){
     var prototype = extend$((import$(monsterGroup, superclass).displayName = 'monsterGroup', monsterGroup), superclass).prototype, constructor = monsterGroup;
-    prototype.createSprites = function(game, image, action, count){
+    prototype.createSprites = function(g, image, action, count){
       var i$, i, results$ = [];
       for (i$ = 0; i$ < count; ++i$) {
         i = i$;
@@ -27,16 +27,16 @@
       }
       return results$;
     };
-    prototype.createSprite = function(game, image, action){
+    prototype.createSprite = function(g, image, action){
       var sprite;
-      sprite = this.create(game.world.randomX, game.world.randomY, image);
+      sprite = this.create(g.world.randomX, g.world.randomY, image);
       sprite.name = "Peng's Minion!";
       if (action === 'bounce') {
-        return game.add.tween(sprite).to({
+        return g.add.tween(sprite).to({
           y: sprite.y - 100
         }, 2000, Phaser.Easing.Elastic.Out, true, 0, 1000, true);
       } else if (action === 'slide') {
-        return game.add.tween(sprite).to({
+        return g.add.tween(sprite).to({
           x: sprite.x + 200
         }, 4000, Phaser.Easing.Elastic.Out, true, 0, 1000, true);
       }
