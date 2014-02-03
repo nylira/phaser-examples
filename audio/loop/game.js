@@ -7,8 +7,8 @@
     create: create
   });
   function preload(){
-    game.load.image('spyro', '../../../phaser/examples/assets/spyro.png');
-    return game.load.audio('squirt', ['../../../phaser/examples/assets/squit.mp3', '../../../phaser/examples/assetssquit.ogg']);
+    game.load.image('spyro', '../../../phaser/examples/assets/pics/spyro.png');
+    return game.load.audio('squirt', ['../../../phaser/examples/assets/audio/SoundEffects/squit.mp3', '../../../phaser/examples/assets/audio/SoundEffects/squit.ogg']);
   }
   function create(){
     var music, s;
