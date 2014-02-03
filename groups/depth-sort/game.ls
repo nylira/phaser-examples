@@ -5,23 +5,22 @@ var desert-map, tileset, layer, player, group, cursors
 old-y = 0
 
 preload = ->
-  g.load.tilemap(
-    \desert, \../../../phaser/examples/assets/tilemaps/maps/desert.json, null, Phaser.Tilemap.TILED_JSON)
-  g.load.image \tiles \../../../phaser/examples/assets/tilemaps/tiles/tmw_desert_spacing.png
   g.load.image \phaser \../../../phaser/examples/assets/sprites/phaser-dude.png
-  g.load.spritesheet \trees \../../../phaser/examples/assets/maps/walls_1x2.png 32 64
+  g.load.tilemap(\desert, \../../../phaser/examples/assets/tilemaps/maps/depthsort.json, null, Phaser.Tilemap.TILED_JSON)
+  g.load.image \ground_1x1 \../../../phaser/examples/assets/tilemaps/tiles/ground_1x1.png
+  g.load.spritesheet \trees \../../../phaser/examples/assets/tilemaps/tiles/walls_1x2.png 32 64
 
 create = ->
   desert-map = g.add.tilemap \desert
-  desert-map.add-tileset-image \Desert, \tiles
-  layer = desert-map.create-layer 'Ground'
+  desert-map.add-tileset-image \ground_1x1
+  layer = desert-map.create-layer 'Tile Layer 1'
   layer.resize-world!                    # resize world to tilemap dimensions
 
   group := g.add.group!
   player := group.create 300 200 \phaser
-  g.camera.follow player                 # basic camera follow
+  #g.camera.follow player                 # basic camera follow
 
-  map create-trees, [0 til 200]           # create trees in group
+  map create-trees, [0 til 50]           # create trees in group
 
   cursors := g.input.keyboard.create-cursor-keys!
 
