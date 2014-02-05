@@ -1,76 +1,52 @@
 'use strict'
+var sprite, group, cursors
 
-game = new Phaser.Game(800, 600, Phaser.CANVAS, '',
+g = new Phaser.Game(800, 600, Phaser.CANVAS, '',
   preload: preload
   create: create
   update: update
-  render: render
 )
 
 function preload
-  game.load.image \phaser \../../../phaser/examples/assets/sprites/phaser-dude.png
-  game.load.spritesheet \veggies \../../../phaser/examples/assets/sprites/fruitnveg32wh37.png 32 32
+  g.load.image \phaser \../../../phaser/examples/assets/sprites/phaser-dude.png
+  g.load.spritesheet \veggies \../../../phaser/examples/assets/sprites/fruitnveg32wh37.png 32 32
 
-var sprite, all-veggies
 
 function create
-  game.stage.background-color = \#222222
+  g.stage.background-color = \#2d2d3d
 
-  sprite := game.add.sprite 32 200 \phaser
+  sprite := g.add.sprite 32 200 \phaser
   sprite.name = \phaser-dude
 
-  all-veggies := game.add.group!
+  group := g.add.group!
 
   for i til 50
-    vegetable = all-veggies.create(
-      100 + Math.random() * 700,
-      game.world.random-y,
-      \veggies,
-      game.rnd.integer-in-range 0 36    # choose a random vegetable
-    )
-    vegetable.name = "veg#i"
-    vegetable.body.immovable = true
+    x = 100 + Math.random! * 700
+    y = g.world.random-y
+    c = group.create x, y, \veggies, g.rnd.integer-in-range 0 36
+    c.name = "veg#i"
+    c.body.immovable = true
 
-  for i til 20
-    chili = all-veggies.create(
-      100 + Math.random() * 700,
-      game.world.random-y,
-      \veggies,
-      17                                # choose a random vegetable
-    )
-    chili.name = "chili#i"
-    chili.body.immovable = true
-
-    game.input.keyboard.add-key-capture(
-      Phaser.Keyboard.LEFT
-      Phaser.Keyboard.RIGHT
-      Phaser.Keyboard.UP
-      Phaser.Keyboard.DOWN
-    )
+    cursors := g.input.keyboard.create-cursor-keys!
 
 function update
+  g.physics.collide sprite, group, collision-handler, null, @
+  #g.physics.collide group, group
+
   sprite.body.velocity.x = 0
   sprite.body.velocity.y = 0
 
-  if game.input.keyboard.is-down Phaser.Keyboard.LEFT
+  if cursors.left.is-down
     sprite.body.velocity.x = -200
-  else if game.input.keyboard.is-down Phaser.Keyboard.RIGHT
+  else if cursors.right.is-down
     sprite.body.velocity.x = 200
 
-  if game.input.keyboard.is-down Phaser.Keyboard.UP
+  if cursors.up.is-down
     sprite.body.velocity.y = -200
-  else if game.input.keyboard.is-down Phaser.Keyboard.DOWN
+  else if cursors.down.is-down
     sprite.body.velocity.y = 200
 
-  game.physics.collide sprite, all-veggies, collisionHandler, null, @
-
 collisionHandler = (obj1, obj2)->
-  console.log 'Hit', obj2.name
-
-  # if the object is a chili pepper
-  if obj2.frame == 17
-    obj2.kill!
-
-function render
-  game.debug.render-quad-tree game.physics.quad-tree
-
+  # If the player collides with the chilis then they get eaten :)
+  # The chili frame ID is 17
+  if obj2.frame == 17 => obj2.kill!
